@@ -1,0 +1,23 @@
+<body onload="FreshworksWidget('hide', 'launcher');">
+    <head>
+    </head>
+    <button onclick="openWidget()" type="button"> Click this button to open the widget</button>
+    <div>
+        <script>
+            function openWidget() {
+                FreshworksWidget('open');
+            }
+            window.fwSettings={
+                'widget_id':84000000829
+            };
+            !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}() 
+        </script>
+        <script type='text/javascript' src='https://ind-widget.freshworks.com/widgets/84000000829.js' async defer></script>
+        <script>
+            FreshworksWidget('prefill', 'ticketForm', {
+                type : 'Purchase a VIP plan',
+            });
+            FreshworksWidget('hide', 'ticketForm', ['type', 'custom_fields.Admin_number']);
+        </script>
+    </div>
+</body>
